@@ -1,8 +1,15 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
+import type { NextPage } from 'next';
+import Head from 'next/head';
+import Link from 'next/link';
+import { BiLinkExternal } from 'react-icons/bi';
+
 import { Header, Container } from '@components';
-import { FolderWrapper, FolderContent, FolderImage } from '@page-styles';
+import { 
+  FolderWrapper, 
+  FolderContent, 
+  FolderImage,
+  InfoButton
+} from '@page-styles';
 
 const Home: NextPage = () => {
   return (
@@ -20,6 +27,9 @@ const Home: NextPage = () => {
           <FolderImage />
           <FolderContent>
             <h1>A <span>{"<software/>"}</span> company that will help you to take your business out of paper.</h1>
+            <Link href="/prices" passHref>
+              <InfoButton>Know More <BiLinkExternal style={{marginLeft: "0.3rem"}}/></InfoButton>
+            </Link>
           </FolderContent>
         </FolderWrapper>
       </main>

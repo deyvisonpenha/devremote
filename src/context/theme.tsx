@@ -10,10 +10,12 @@ interface ITheme {
   theme: {
     background: string;
     color: string;
+    type: string;
   },
   setTheme: Dispatch<SetStateAction<{
     background: string;
     color: string;
+    type: string
 }>>
 }
 
@@ -21,10 +23,12 @@ export const themes = {
     light: {
       background: '#F2F2F2',
       color: '#0a0a0a',
+      type: 'light',
     },
     dark: {
       background: '#0a0a0a',
       color: '#F2F2F2',
+      type: 'dark'
     },
   };
   

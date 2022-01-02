@@ -5,8 +5,11 @@ import { SwitchToggle } from '@components';
 import { useTheme, themes } from '@context-theme';
 
 export const Logo = () => {
-    const [state, setState] = useState<boolean>();
-    const { setTheme } = useTheme();
+    const { theme, setTheme } = useTheme();
+    
+    const defaultState = theme.type === 'light' ? true : false;
+
+    const [state, setState] = useState(defaultState);
 
     useEffect(()=>{
         if(state) {
