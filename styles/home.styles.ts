@@ -2,20 +2,21 @@ import styled from 'styled-components';
 
 export const FolderWrapper = styled.section`
   display: flex;
-  height: 50em;
-  margin-top: 1em;
+  height: 50rem;
+  margin-top: 1rem;
 `;
 
 export const FolderContent = styled.div`
   width: 60vw;
   height: 100%;
-  margin: 10em 2em 2em 2em;
+  margin: 10rem 2rem 2rem 2rem;
 
   text-align: center;
 
     h1{
       font-weight: 700;
-      font-size: 4em;
+      font-size: 4rem;
+      word-spacing: 0.6rem;
 
       span{
         color: #AC0086;

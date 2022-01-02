@@ -5,18 +5,20 @@ import { SwitchToggle } from '@components';
 import { useTheme, themes } from '@context-theme';
 
 export const Logo = () => {
-    const [state, setState] = useState(false);
+    const [state, setState] = useState<boolean>();
     const { setTheme } = useTheme();
 
-    function handleChange(childrenState: boolean){
-        setState(childrenState);
-        
-        if(childrenState) {
+    useEffect(()=>{
+        if(state) {
             setTheme(themes.light);
         }
         else{
             setTheme(themes.dark);
         }
+    },[setTheme, state]);
+
+    function handleChange(childrenState: boolean){
+        setState(childrenState);
     }
 
     return (
@@ -24,7 +26,7 @@ export const Logo = () => {
             <Title>DEV</Title>
             <SubTitle>
                 <p>REM</p>
-                <SwitchToggle switchSate={state} onChange={handleChange}/>
+                <SwitchToggle switchSate={state || false} onChange={handleChange}/>
                 <p>TE</p>
             </SubTitle>
         </Container>

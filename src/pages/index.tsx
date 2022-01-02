@@ -19,8 +19,7 @@ const Home: NextPage = () => {
         <FolderWrapper>
           <FolderImage />
           <FolderContent>
-            <h1>A <span>{"<software/>"}</span> company that will help you to </h1>
-            <h1>take your idea of paper.</h1>
+            <h1>A <span>{"<software/>"}</span> company that will help you to take your business out of paper.</h1>
           </FolderContent>
         </FolderWrapper>
       </main>

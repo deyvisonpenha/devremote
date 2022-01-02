@@ -20,10 +20,10 @@ interface ITheme {
 export const themes = {
     light: {
       background: '#F2F2F2',
-      color: '#333',
+      color: '#0a0a0a',
     },
     dark: {
-      background: '#333',
+      background: '#0a0a0a',
       color: '#F2F2F2',
     },
   };
