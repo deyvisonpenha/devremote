@@ -36,7 +36,7 @@ export const FolderImage = styled.div`
   background-size: cover;
 `;
 
-export const InfoButton = styled.a`
+export const InfoButton = styled.p`
   display: flex;
   background: #1983ff;
   color: #FFF;

@@ -1,14 +1,17 @@
-import type { AppProps } from 'next/app';
+import type { AppProps } from "next/app";
 
-import { GlobalStyle } from '@global-styles';
-import { ThemeContextProvider } from '@context-theme';
+import { GlobalStyle } from "@global-styles";
+import { ThemeContextProvider } from "@context-theme";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ThemeContextProvider >
+    <>
+      {/* <ThemeContextProvider > */}
       <Component {...pageProps} />
-      <GlobalStyle />
-    </ThemeContextProvider>
-)}
+      {/* <GlobalStyle /> */}
+      {/* </ThemeContextProvider> */}
+    </>
+  );
+}
 
-export default MyApp
+export default MyApp;

@@ -1,37 +1,42 @@
-import { useEffect, useState } from 'react';
+import { Rubik_Microbe } from "@next/font/google";
+import Typography from "@mui/material/Typography";
+import { Box } from "@mui/material";
 
-import { Container, Title, SubTitle} from './styles';
-import { SwitchToggle } from '@components';
-import { useTheme, themes } from '@context-theme';
+const titleFont = Rubik_Microbe({
+  weight: "400",
+});
 
 export const Logo = () => {
-    const { theme, setTheme } = useTheme();
-    
-    const defaultState = theme.type === 'light' ? true : false;
-
-    const [state, setState] = useState(defaultState);
-
-    useEffect(()=>{
-        if(state) {
-            setTheme(themes.light);
-        }
-        else{
-            setTheme(themes.dark);
-        }
-    },[setTheme, state]);
-
-    function handleChange(childrenState: boolean){
-        setState(childrenState);
-    }
-
-    return (
-        <Container>
-            <Title>DEV</Title>
-            <SubTitle>
-                <p>REM</p>
-                <SwitchToggle switchSate={state || false} onChange={handleChange}/>
-                <p>TE</p>
-            </SubTitle>
-        </Container>
-    )
-}
+  return (
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        width: 200,
+        alignItems: "center",
+      }}
+    >
+      <Typography
+        className={titleFont.className}
+        sx={{
+          fontWeight: 400,
+          margin: 0,
+          letterSpacing: "0.2rem",
+          fontSize: "1em",
+        }}
+      >
+        DEV
+      </Typography>
+      <Typography
+        className={titleFont.className}
+        sx={{
+          margin: 0,
+          letterSpacing: "0.3rem",
+          fontSize: "1.5em",
+        }}
+      >
+        REMOTE
+      </Typography>
+    </Box>
+  );
+};

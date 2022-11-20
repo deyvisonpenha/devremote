@@ -12,11 +12,12 @@ interface ITheme {
 export const Container = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    -webkit-justify-content: space-between;
+    -webkit-justify-content: space-around;
     -webkit-align-items: center;
     padding: 0 2em;
+    background-color: #292929;
 `;
 
 export const ArrowBack = styled(BiArrowBack)`
@@ -30,15 +31,15 @@ export const ContentLinkPages = styled.div`
     flex-direction: row;
     font-size: 1.2rem;
     font-weight: 700;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin-left: 8rem;
 
     a {
         cursor: pointer;
-        color: ${props => props.theme.type === 'dark' ? shade(0.4, props.theme.color) : lighten(0.4, props.theme.color)};
+        color: ${props => props.theme.type === 'dark' ? shade(0.1, props.theme.color) : lighten(0.4, props.theme.color)};
 
         &:hover{
-            color: ${props => props.theme.type === 'dark' ? shade(0.1, props.theme.color) : lighten(0.1, props.theme.color)};
+            color: ${props => props.theme.type === 'dark' ? shade(0.4, props.theme.color) : lighten(0.1, props.theme.color)};
         }
 
         &+a{

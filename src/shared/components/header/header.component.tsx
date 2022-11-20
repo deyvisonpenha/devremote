@@ -1,43 +1,31 @@
-import { useRouter } from 'next/router';
-import Link from 'next/link';
-
-import {
-    Container, 
-    ArrowBack, 
-    ContentLinkPages
-} from './styles';
-import { Logo } from '@components';
+import Link from "next/link";
+import { Container, ContentLinkPages } from "./styles";
+import { Logo, ResponsiveAppBar } from "@components";
 
 export const Header: React.FC = () => {
-    const router = useRouter();
-
-    function GoBackLink(){
-        return (
-            <>
-            { router.pathname !== '/' && 
-                <ArrowBack size={40} onClick={()=>router.back()}/> 
-            }
-            </>
-        )
-    }
-
+  const MenuList = () => {
     return (
-        <Container>
-            <GoBackLink />
-            <ContentLinkPages>
-                <Link href="/products">
-                    <a>Products</a>
-                </Link>
-                
-                <Link href="/prices">
-                    <a>Prices</a>
-                </Link>
-                
-                <Link href="/contact">
-                    <a>Contact</a>
-                </Link>
-            </ContentLinkPages>
-            <Logo />
-        </Container>
+      <ContentLinkPages>
+        <Link href="/products">Products</Link>
+
+        <Link href="/prices">Prices</Link>
+
+        <Link href="/contact">Contact</Link>
+      </ContentLinkPages>
     );
-}
+  };
+  return (
+    <Container>
+      {/* <Logo />
+      <ContentLinkPages>
+        <Link href="/products">Products</Link>
+
+        <Link href="/prices">Prices</Link>
+
+        <Link href="/contact">Contact</Link>
+      </ContentLinkPages>
+      <div>PT | EN</div> */}
+      <ResponsiveAppBar LogoComponent={Logo} ListMenu={<MenuList />} />
+    </Container>
+  );
+};
