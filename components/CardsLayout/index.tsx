@@ -4,7 +4,7 @@ export const CardLayout = () => {
     return(
 <>
 <div className=' flex gap-1'>
-<h1 className='z ml-11'>"Remote Collaboration, Real Impact: Transforming the World with Web and Mobile Cutting-Edge Apps."</h1>
+<h1 className='z ml-11'>Remote Collaboration, Real Impact: Transforming the World with Web and Mobile Cutting-Edge Apps.</h1>
 
 <Card className='rounded-tl-[20px]  rounded-br-[20px] border-slate-100' >
   
