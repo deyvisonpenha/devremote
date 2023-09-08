@@ -89,13 +89,13 @@ export default function Home() {
         </main>
        
         
-        <section id="Sessão  banner devRemote" className="flex items-center justify-center    bg-gray-50 w-full h-[450px]"><h1 className=' text-gray-800 font-bold text-9xl'>DevRemote</h1> </section>
+        <section id="Sessão banner devRemote" className="flex items-center justify-center bg-gray-50 w-full h-[450px]"><h1 className=' text-gray-800 font-bold text-9xl'>DevRemote</h1> </section>
 
            
           
 
 
-        <section id=" Sessão como Trabalamos" className="flex flex-col  bg-white  w-full h-full ">
+        <section id=" Sessão como Trabalamos" className="flex flex-col bg-white w-full h-full ">
           
           <p className=' font-sans font-medium text-2xl break-all mt-44 ml-80' >Our process</p>
           <h1 className=' font-sans font-medium text-5xl break-all mt-14 ml-80'>
@@ -117,7 +117,7 @@ export default function Home() {
                 <p className='mt-10 text-gray-600 text-xl  font-light' >Our team of skilled tech experts passionately explores your technological landscape, carefully analyzing existing systems and processes to uncover areas for improvement. Instead of private investigators, we employ talented tech specialists who diligently study your digital infrastructure to ensure seamless integration of our solutions.</p>
               </p>
 
-              <h1 className=' font-sans font-bold text-2sm break-all mt-9  ' >Included in this phase</h1>
+              <h1 className=' font-sans font-bold text-2sm break-all mt-9'>Included in this phase</h1>
               <div className=' gap-5 mt-5 flex-col grid grid-cols-3'>
                 <Button className="py-5 rounded-full text-sm  shadow-xl" >
                   In-depth
@@ -141,17 +141,17 @@ export default function Home() {
          {/* //02 card*/}
           <div className='flex flex-row justify-center gap-20 mt-44'>
             <div className='w-[560px]'>
-              <h1 className=' font-sans font-bold text-xl break-all mt-9  '>
+              <h1 className=' font-sans font-bold text-xl break-all mt-9'>
                 / 02
               </h1>
-              <h2 className=' font-sans font-medium text-3xl break-all mt-1 mb-10 '>
+              <h2 className=' font-sans font-medium text-3xl break-all mt-1 mb-10'>
                 Discover
               </h2>
               <p className='mt-10 text-gray-600 text-xl  font-light'>At our technology startup, we adopt a customer-centric approach, collaborating closely with our clients to gain a deep understanding of their unique needs and objectives. By immersing ourselves in their operations, we seek to unravel the intricacies of their business and identify what drives their success.
                 <p className='mt-10 text-gray-600 text-xl  font-light' >Our team of skilled tech experts passionately explores your technological landscape, carefully analyzing existing systems and processes to uncover areas for improvement. Instead of private investigators, we employ talented tech specialists who diligently study your digital infrastructure to ensure seamless integration of our solutions.</p>
               </p>
 
-              <h1 className=' font-sans font-bold text-2sm break-all mt-9  ' >Included in this phase</h1>
+              <h1 className=' font-sans font-bold text-2sm break-all mt-9' >Included in this phase</h1>
               <div className=' gap-5 mt-5 flex-col grid grid-cols-3'>
                 <Button className="py-5 rounded-full text-sm  shadow-xl" >
                   In-depth
@@ -178,7 +178,7 @@ export default function Home() {
           <div className='flex flex-row justify-center gap-20 mt-44 mb-48' >
             <Card className='w-[600px] h-[700px]'></Card>
             <div className='w-[560px]'>
-              <h1 className=' font-sans font-bold text-xl break-all mt-9  '>
+              <h1 className=' font-sans font-bold text-xl break-all mt-9'>
                 / 03
               </h1>
               <h2 className=' font-sans font-medium text-3xl break-all mt-1 mb-10 '>
